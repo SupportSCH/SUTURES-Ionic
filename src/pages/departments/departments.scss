@@ -1,0 +1,22 @@
+page-departments {
+
+    ion-card {
+        text-align: center;        
+    }
+
+    .connected {
+        color: green !important;
+    }
+
+    .disconnected {
+        color: red !important;
+    }
+
+    .badge {
+        position: absolute;
+        margin-left: 134px;
+        margin-top: -7px;
+        border-radius: 9px;
+    }
+    
+}

@@ -1,0 +1,117 @@
+<ion-header>
+
+  <ion-navbar color="primary">
+    <ion-title>Quantity</ion-title>
+
+    <ion-buttons end>
+      <button ion-button icon-only (click)="checkConnection()">
+        <ion-icon class="disconnected" name="wifi"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <ion-card>
+    <ion-card-header>
+      <strong>Jobcard Details</strong>
+
+      <strong class="right">September Plan</strong>
+    </ion-card-header>
+
+    <ion-card-content>
+
+      <ion-row>
+        <ion-col col-6>
+          <ion-item>
+            <ion-icon name="clipboard" item-start large></ion-icon>
+            <h2>Customer Name</h2>
+            <p>DZ4059100, 4100 </p>
+          </ion-item>
+        </ion-col>
+
+        <ion-col col-6>
+          <ion-item>
+            <ion-icon name="calendar" item-start large></ion-icon>
+            <h2>Required Date</h2>
+            <p>29/05/2018 </p>
+          </ion-item>
+        </ion-col>
+
+        <ion-col col-6>
+          <ion-item>
+            <ion-icon name="options" item-start large></ion-icon>
+            <h2>Options</h2>
+            <p>Urgent, Siliconize </p>
+          </ion-item>
+        </ion-col>
+
+        <ion-col col-6>
+          <ion-item>
+            <ion-icon name="more" item-start large></ion-icon>
+            <h2>B.C No</h2>
+            <p>123456789, (1/2) </p>
+          </ion-item>
+        </ion-col>
+      </ion-row>
+
+      <ion-item>
+        <span item-start>
+          <h1><strong class="qty">2100</strong></h1>
+        </span>
+        <span item-start>(S.T qty)</span>
+      </ion-item>
+
+    </ion-card-content>
+  </ion-card>
+
+  <ion-row>
+    <ion-col col-4>
+      <ion-card>
+        <ion-card-header class="green">
+          Record Ok Qty
+        </ion-card-header>
+
+        <ion-card-content>
+            <p class="quantity">{{serviceProvider.Quantity[0].ok}}</p>
+          <button ion-button (click)="gotoOKQuantity()">submit</button>
+        </ion-card-content>
+      </ion-card>
+    </ion-col>
+
+    <ion-col col-4>
+      <ion-card>
+        <ion-card-header class="yellow">
+          Record Rework Qty
+        </ion-card-header>
+
+        <ion-card-content>
+            <p class="quantity">{{serviceProvider.Quantity[0].rework}}</p>
+          <button ion-button (click)="gotoReworkQuantity()">submit</button>
+        </ion-card-content>
+      </ion-card>
+
+    </ion-col>
+
+    <ion-col col-4>
+      <ion-card>
+        <ion-card-header class="red">
+          Record Rejected Qty
+        </ion-card-header>
+
+        <ion-card-content>
+          <p class="quantity">{{serviceProvider.Quantity[0].reject}}</p>
+          <button ion-button (click)="gotoRejectedQuantity()">submit</button>
+        </ion-card-content>
+      </ion-card>
+    </ion-col>
+  </ion-row>
+
+  <ion-fab right bottom>
+    <button ion-fab (click)="gotoRootPage()">
+      <ion-icon name="checkmark"></ion-icon>
+    </button>
+  </ion-fab>
+</ion-content>

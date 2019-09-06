@@ -1,0 +1,27 @@
+[
+    {
+        "checklist_id": 1 ,
+        "checklist_name": "Coolant Oil",
+        "status": false
+    },
+    {
+        "checklist_id": 2 ,
+        "checklist_name": "Greasing ",
+        "status": false
+    },
+    {
+        "checklist_id": 3 ,
+        "checklist_name": "Cleanliness",
+        "status": false
+    },
+    {
+        "checklist_id": 1 ,
+        "checklist_name": "Power Supply",
+        "status": false
+    },
+    {
+        "checklist_id": 1 ,
+        "checklist_name": "Helmat",
+        "status": false
+    }
+]

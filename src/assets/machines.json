@@ -1,0 +1,23 @@
+[
+    {
+        "machine_name": "Straight Cut 1",
+        "status": "avaiable"
+    },
+    {
+        "machine_name": "Straight Cut 2",
+        "status": "avaiable"
+    },
+    {
+        "machine_name": "Straight Cut 3",
+        "status": "unavaiable"
+    },
+    {
+        "machine_name": "Straight Cut 4",
+        "status": "avaiable"
+    },
+    {
+        "machine_name": "Straight Cut 5",
+        "status": "unavaiable"
+    }
+
+]

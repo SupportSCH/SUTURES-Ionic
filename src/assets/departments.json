@@ -1,0 +1,42 @@
+[
+    {
+        "Department No" : 1,
+        "Department_Name": "Straight Cutting",
+        "Machines_Available": 6
+    },
+    {
+        "Department No" : 2,
+        "Department_Name": "Tip Rough Cutting",
+        "Machines_Available": 3
+    },
+    {
+        "Department No" : 3,
+        "Department_Name": "End Cutting",
+        "Machines_Available": 5
+    },
+    {
+        "Department No" : 4,
+        "Department_Name": "Centering",
+        "Machines_Available": 2
+    },
+    {
+        "Department No" : 5,
+        "Department_Name": "Center Check",
+        "Machines_Available": 1
+    },
+    {
+        "Department No" : 6,
+        "Department_Name": "Drilling",
+        "Machines_Available": 9
+    },
+    {
+        "Department No" : 7,
+        "Department_Name": "Gauge Check",
+        "Machines_Available": 4
+    },
+    {
+        "Department No" : 8,
+        "Department_Name": "Pressing",
+        "Machines_Available": 10
+    }
+]

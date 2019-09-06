@@ -1,0 +1,25 @@
+{
+    "Hello": "ಹಲೋ",
+    "Home": "ಮುಖಪುಟ",
+    "Dashboard": "ಡ್ಯಾಶ್ಬೋರ್ಡ್",
+    "Menu": "ಮೆನು",
+    "Settings": "ಸೆಟ್ಟಿಂಗ್ಗಳು",
+    "Choose Language": "ಭಾಷೆಯನ್ನು ಆರಿಸಿ",
+    "Logout": "ಲಾಗ್ ಔಟ್",
+    "Departments": "ಇಲಾಖೆಗಳು",
+    "Checklist": "ಪರಿಶೀಲನಾಪಟ್ಟಿ",
+    "5S Checklist": "5S ಪರಿಶೀಲನಾಪಟ್ಟಿ",
+    "Approve Check lists": "ಚೆಕ್ ಪಟ್ಟಿಗಳನ್ನು ಅನುಮೋದಿಸಿ",
+    "Assign Job to Machine": "ಯಂತ್ರಕ್ಕೆ ಕೆಲಸವನ್ನು ಜೋಡಿಸಿ",
+    "Acknowledge the job card": "ಕೆಲಸದ ಕಾರ್ಡ್ ಅಂಗೀಕರಿಸು",
+    "Machine Idle Time Set/Reset": "ಮೆಷಿನ್ ಐಡಲ್ ಟೈಮ್ ಸೆಟ್ / ಮರುಹೊಂದಿಸಿ",
+    
+    "Straight Cutting": "ನೇರ ಕಟಿಂಗ್",
+    "Tip Rough Cutting": "ಸಲಹೆ ರಫ್ ಕಟ್ಟಿಂಗ್",
+    "End Cutting": "ಕಟಿಂಗ್ ಎಂಡ್",
+    "Centering": "ಕೇಂದ್ರೀಕರಿಸುವುದು",
+    "Center Check": "ಸೆಂಟರ್ ಚೆಕ್",
+    "Drilling": "ಕೊರೆಯುವುದು",
+    "Gauge Check": "ಗೇಜ್ ಚೆಕ್",
+    "Pressing": "ಒತ್ತಿ"
+}

@@ -1,0 +1,63 @@
+<ion-header>
+
+  <ion-navbar color="primary">
+    <ion-title>Checklist Approval</ion-title>
+
+    <ion-buttons end>
+      <button ion-button icon-only (click)="checkConnection()">
+        <ion-icon class="disconnected" name="wifi"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+
+</ion-header>
+
+<ion-content padding>
+  <ion-row>
+    <ion-col col-6>
+      <ion-card>
+        <ion-card-header>
+          <strong>Straight Cut</strong>
+          <strong class="right"> (Staright Cut 1)</strong>
+        </ion-card-header>
+
+        <ion-card-content>
+          <ion-item-divider>
+            High Level Checklist
+          </ion-item-divider>
+
+          <ion-item>
+            <ion-icon name="checkbox-outline" item-start large></ion-icon>
+            <h2>Check Greasing</h2>
+            <p>Not Ok</p>
+          </ion-item>
+
+          <ion-item-divider>
+            Low Level Checklist
+          </ion-item-divider>
+
+          <ion-item>
+            <ion-icon name="checkbox-outline" item-start large></ion-icon>
+            <h2>Wiring</h2>
+            <p>Not Ok </p>
+          </ion-item>
+
+          <ion-item>
+            <button ion-button item-end color="primary" (click)="createMaintanenceTicket()">
+              <ion-icon name="add"></ion-icon>&nbsp;&nbsp;
+              Stop Maintanence
+            </button>
+
+            <button ion-button item-end class="qty" (click)="approve()">
+              <ion-icon name="checkmark"></ion-icon>&nbsp;&nbsp;
+              Approve
+            </button>
+
+          </ion-item>
+
+        </ion-card-content>
+      </ion-card>
+    </ion-col>
+  </ion-row>
+
+</ion-content>

@@ -1,0 +1,15 @@
+page-dashboard {
+
+    ion-card {
+        text-align: center;        
+    }
+
+    .connected {
+        color: green !important;
+    }
+
+    .disconnected {
+        color: red !important;
+    }
+    
+}

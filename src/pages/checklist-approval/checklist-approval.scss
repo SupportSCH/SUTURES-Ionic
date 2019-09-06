@@ -1,0 +1,27 @@
+page-checklist-approval {
+    
+    .connected {
+        color: green !important;
+    }
+
+    .disconnected {
+        color: red !important;
+    }
+
+    ion-card-header {
+        background-color: #3700B3;
+        color: white !important;
+    }
+
+    .item-bold {
+        font-weight: bold;
+    }
+
+    .qty {
+        background-color: green !important;
+    }
+
+    .right {
+        float: right;
+    }
+}

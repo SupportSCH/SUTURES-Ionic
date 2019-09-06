@@ -1,0 +1,45 @@
+<ion-header>
+  <ion-navbar color="primary">
+    <ion-title>Rework Quantity</ion-title>
+
+    <ion-buttons end>
+      <button ion-button icon-only (click)="checkConnection()">
+        <ion-icon class="disconnected" name="wifi"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+
+  <ion-list>
+
+    <ion-item>
+      <ion-label stacked>Rework Quantity</ion-label>
+      <ion-input type="number" [(ngModel)]="rework" disabled></ion-input>
+    </ion-item>
+
+    <ion-item-divider>
+      Item Divider
+    </ion-item-divider>
+
+    <ion-item>
+      <ion-label stacked>Recheck</ion-label>
+      <ion-input type="number" [(ngModel)]="recheck" placeholder="000"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label stacked>Depth</ion-label>
+      <ion-input type="number" [(ngModel)]="depth" placeholder="000"></ion-input>
+    </ion-item>
+
+  </ion-list>
+
+</ion-content>
+
+
+<ion-fab right bottom>
+  <button ion-fab (click)="pop()">
+    <ion-icon name="checkmark"></ion-icon>
+  </button>
+</ion-fab>

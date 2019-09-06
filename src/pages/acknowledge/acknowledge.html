@@ -1,0 +1,51 @@
+<ion-header>
+
+  <ion-navbar color="primary">
+    <ion-title>Acknowledge</ion-title>
+
+    <ion-buttons end>
+      <button ion-button icon-only (click)="checkConnection()">
+        <ion-icon class="disconnected" name="wifi"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+
+  <ion-row>
+    
+    <ion-col col-4>
+      <ion-card>
+        <ion-card-header>
+          <strong>Acknowledge Receipt</strong>
+        </ion-card-header>
+
+        <ion-card-content>
+
+          <ion-item>
+            <ion-icon name="document" item-start large></ion-icon>
+            <h2>Previous Operator Name</h2>
+            <p>1234567, (1/2) </p>
+          </ion-item>
+
+          <ion-item>
+            <span item-start>
+              <h1><strong class="qty">2100</strong></h1>
+            </span>
+            <span item-start>(qty)</span>
+            <button ion-button icon-start clear item-end (click)="acknowledge()">
+              <ion-icon name="swap"></ion-icon>
+              Acknowledge
+            </button>
+          </ion-item>
+
+        </ion-card-content>
+      </ion-card>
+    </ion-col>
+
+  </ion-row>
+
+</ion-content>

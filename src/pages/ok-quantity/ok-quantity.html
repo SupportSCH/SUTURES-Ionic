@@ -1,0 +1,32 @@
+<ion-header>
+  <ion-navbar color="primary">
+    <ion-title>OK Quantity</ion-title>
+
+    <ion-buttons end>
+      <button ion-button icon-only (click)="checkConnection()">
+        <ion-icon class="disconnected" name="wifi"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content padding>
+
+  <ion-list>
+
+    <ion-item>
+      <ion-label stacked>OK Quantity</ion-label>
+      <ion-input type="number" [(ngModel)]="okquantity" placeholder="000"></ion-input>
+    </ion-item>
+
+  </ion-list>
+
+</ion-content>
+
+
+<ion-fab right bottom>
+  <button ion-fab (click)="pop()">
+    <ion-icon name="checkmark"></ion-icon>
+  </button>
+</ion-fab>

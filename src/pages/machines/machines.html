@@ -1,0 +1,26 @@
+<ion-header>
+  <ion-navbar color="primary">
+    <ion-title>Machines</ion-title>
+
+    <ion-buttons end>
+      <button ion-button icon-only (click)="checkConnection()">
+        <ion-icon class="disconnected" name="wifi"></ion-icon>
+      </button>
+    </ion-buttons>
+
+  </ion-navbar>
+</ion-header>
+
+<!-- Team Leader Machines Page -->
+<ion-content padding>
+  <ion-row>
+    <ion-col col-4 *ngFor="let machines of Machines">
+      <ion-card color="secondary" (click)="gotoNextPage()">
+        <ion-card-content>
+          <strong>{{ machines.machine_name }}</strong>
+        </ion-card-content>
+      </ion-card>
+    </ion-col>
+  </ion-row>
+</ion-content>
+<!-- End Team Leader Machines Page -->

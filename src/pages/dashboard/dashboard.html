@@ -1,0 +1,126 @@
+<ion-header>
+
+  <ion-navbar color="primary">
+
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+
+    <ion-title>{{'Dashboard' | translate}}</ion-title>
+
+    <ion-buttons end>
+      <button ion-button icon-only (click)="checkConnection()">
+        <ion-icon class="disconnected" name="wifi"></ion-icon>
+      </button>
+    </ion-buttons>
+
+  </ion-navbar>
+
+</ion-header>
+
+<!-- Team Leader Dashboard -->
+<ion-content padding *ngIf="serviceProvider.checkUserRole() == 'TL'">
+  <ion-row>
+
+    <ion-col col-6>
+      <ion-card color="secondary" (click)="gotoMachinesPage(1)">
+        <ion-item color="secondary">
+          <ion-icon name="list-box" item-start large></ion-icon>
+          <h2><strong>{{'5S Checklist' | translate}}</strong></h2>
+        </ion-item>
+      </ion-card>
+    </ion-col>
+
+    <ion-col col-6>
+      <ion-card color="secondary" (click)="gotoMachinesPage(2)">
+        <ion-item color="secondary">
+          <ion-icon name="timer" item-start large></ion-icon>
+          <h2><strong>{{'Machine Idle Time Set/Reset' | translate}}</strong></h2>
+        </ion-item>
+      </ion-card>
+    </ion-col>
+
+    <ion-col col-6>
+      <ion-card color="secondary" (click)="gotoAcknowledge()">
+        <ion-item color="secondary">
+          <ion-icon name="swap" item-start large></ion-icon>
+          <h2><strong>{{'Acknowledge the job card' | translate}}</strong></h2>
+        </ion-item>
+      </ion-card>
+    </ion-col>
+
+    <ion-col col-6>
+      <ion-card color="secondary" (click)="gotoChecklistApproval()">
+        <ion-item color="secondary">
+          <ion-icon name="checkbox" item-start large></ion-icon>
+          <h2><strong>{{'Approve Check lists' | translate}}</strong></h2>
+        </ion-item>
+      </ion-card>
+    </ion-col>
+
+    <ion-col col-6>
+        <ion-card color="secondary" (click)="scanJobcard(5)">
+          <ion-item color="secondary">
+            <ion-icon name="briefcase" item-start large></ion-icon>
+            <h2><strong>{{'Assign Job to Machine' | translate}}</strong></h2>
+          </ion-item>
+        </ion-card>
+      </ion-col>
+
+  </ion-row>
+
+</ion-content>
+<!-- Team Leader Dashboard End-->
+
+<!-- Operator Dashboard Starts -->
+<ion-content padding *ngIf="serviceProvider.checkUserRole() == 'OP'">
+  <ion-row>
+
+    <ion-col col-6>
+      <ion-card color="secondary" (click)="gotoMachinesPage(3)">
+        <ion-item color="secondary">
+          <ion-icon name="list-box" item-start large></ion-icon>
+          <h2><strong>{{'Operator Checklist' | translate}}</strong></h2>
+        </ion-item>
+      </ion-card>
+    </ion-col>
+
+    <ion-col col-6>
+      <ion-card color="secondary" (click)="scanJobcard(1)">
+        <ion-item color="secondary">
+          <ion-icon name="pause" item-start large></ion-icon>
+          <h2><strong>{{'Pause a Jobcard' | translate}}</strong></h2>
+        </ion-item>
+      </ion-card>
+    </ion-col>
+
+    <ion-col col-6>
+      <ion-card color="secondary" (click)="scanJobcard(2)">
+        <ion-item color="secondary">
+          <ion-icon name="arrow-dropright" item-start large></ion-icon>
+          <h2><strong>{{'Countinue a Jobcard' | translate}}</strong></h2>
+        </ion-item>
+      </ion-card>
+    </ion-col>
+
+    <ion-col col-6>
+      <ion-card color="secondary" (click)="scanJobcard(3)">
+        <ion-item color="secondary">
+          <ion-icon name="close-circle" item-start large></ion-icon>
+          <h2><strong>{{'Close Current Job' | translate}}</strong></h2>
+        </ion-item>
+      </ion-card>
+    </ion-col>
+
+    <ion-col col-6>
+      <ion-card color="secondary" (click)="scanJobcard(4)">
+        <ion-item color="secondary">
+          <ion-icon name="checkbox-outline" item-start large></ion-icon>
+          <h2><strong>{{'Order Confirmation' | translate}}</strong></h2>
+        </ion-item>
+      </ion-card>
+    </ion-col>
+
+  </ion-row>
+</ion-content>
+<!-- Operator Dashboard End -->

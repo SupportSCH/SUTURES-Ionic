@@ -1,0 +1,7 @@
+{
+  "name": "suture",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular"
+}

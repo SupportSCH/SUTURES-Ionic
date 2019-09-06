@@ -1,0 +1,28 @@
+<ion-header>
+  <ion-navbar color="primary">
+
+    <ion-title>Checklist </ion-title>
+    <ion-buttons end>
+      <button ion-button icon-only (click)="checkConnection()">
+        <ion-icon class="disconnected" name="wifi"></ion-icon>
+      </button>
+    </ion-buttons>
+
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content padding>
+
+  <ion-item *ngFor="let checklist of Checklist">
+    <ion-label>{{checklist.checklist_name}}</ion-label>
+    <ion-toggle checked="false"></ion-toggle>
+  </ion-item>
+
+</ion-content>
+
+<ion-fab right bottom>
+  <button ion-fab (click)="gotoDashboardPage()">
+    <ion-icon name="checkmark"></ion-icon>
+  </button>
+</ion-fab>
